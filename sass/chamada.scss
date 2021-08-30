@@ -1,0 +1,32 @@
+@use 'modules/cores';
+@use 'modules/fonts';
+
+.chamada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: cores.$branco;
+  text-align: center;
+  background-color: cores.$bg-chamada-mobile;
+  padding-top: 12.25rem;
+  padding-bottom: 2.5rem;
+
+  &__titulo {
+    font-family: fonts.$montserrat, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+  }
+
+  &__texto {
+    font-size: 1.25rem;
+    line-height: normal;
+    margin: 0 auto 2.5rem;
+  }
+  
+  &__botao {
+    width: 100%;
+  }
+}

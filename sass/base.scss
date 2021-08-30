@@ -1,0 +1,5 @@
+@use 'modules/fonts';
+
+body {
+    font-family: fonts.$open-sans;
+}
