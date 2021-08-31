@@ -1,4 +1,9 @@
 .cabecalho {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.cabecalho {
   color: #FFF;
   width: 100%;
   box-sizing: border-box;

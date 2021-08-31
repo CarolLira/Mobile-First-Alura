@@ -1,0 +1,35 @@
+@use '../modules/cores';
+@use '../modules/fonts';
+
+.sobre {
+  @extend %container;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__titulo {
+    color: cores.$cinza-escuro;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: fonts.$montserrat;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  &__texto {
+    line-height: normal;
+    margin-bottom: 1rem;
+
+    &--destaque {
+      color: cores.$cinza-escuro;
+      font-weight: 700;
+    }
+  }
+
+  &__plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+}
