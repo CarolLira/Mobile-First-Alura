@@ -1,11 +1,6 @@
-@use 'cores';
+@use '../modules/cores';
 
-%container {
-    padding-right: 6%;
-    padding-left: 6%;
-}
-
-%botao {
+@mixin button() {
     text-align: center;
     display: block;
     width: 100%;
@@ -13,4 +8,8 @@
     box-sizing: border-box;
     padding: 1rem 2rem;
     border-radius: 5px;
+}
+
+@mixin button-border($border-color: cores.$branco) {
+    border: 1px solid $border-color;
 }

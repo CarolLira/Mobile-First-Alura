@@ -1,4 +1,19 @@
 .planos {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.cartao__botao {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.planos {
   background-color: #F7F4F4;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -60,13 +75,13 @@
   margin-bottom: 1rem;
 }
 .cartao__botao--start {
-  border-color: #56CCF2;
+  border: 1px solid #56CCF2;
 }
 .cartao__botao--ultra {
-  border-color: #B04CD9;
+  border: 1px solid #B04CD9;
 }
 .cartao__botao--mega {
-  border-color: #E33B3B;
+  border: 1px solid #E33B3B;
 }
 .cartao--start {
   color: #56CCF2;

@@ -1,7 +1,10 @@
 @use '../modules/cores';
 @use '../modules/fonts';
+@use '../modules/extends';
+@use '../modules/mixins';
 
 .planos {
+    @extend %container;
     background-color: cores.$cinza-claro;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -60,6 +63,7 @@
     }
 
     &__botao {
+        @extend %botao;
         font-size: 1.2rem;
         font-weight: 700;
         width: 100%;
@@ -69,15 +73,15 @@
         margin-bottom: 1rem;
 
         &--start {
-            border-color: cores.$planos-cartao-start;
+            @include mixins.button-border($border-color: cores.$planos-cartao-start);
         }
 
         &--ultra {
-            border-color: cores.$planos-cartao-ultra;
+            @include mixins.button-border($border-color: cores.$planos-cartao-ultra);
         }
 
         &--mega {
-            border-color: cores.$planos-cartao-mega;
+            @include mixins.button-border($border-color: cores.$planos-cartao-mega);
         }
     }
 

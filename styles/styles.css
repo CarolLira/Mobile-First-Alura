@@ -57,19 +57,18 @@ body {
   font-family: "Open Sans";
 }
 
-.sobre, .diferenciais, .destaques, .chamada, .cabecalho {
+.contato, .sobre, .diferenciais, .planos, .destaques, .chamada, .cabecalho {
   padding-right: 6%;
   padding-left: 6%;
 }
 
-.destaques__botao, .chamada__botao {
+.contato__botao, .cartao__botao, .destaques__botao, .chamada__botao {
   text-align: center;
   display: block;
   width: 100%;
   max-width: 350px;
   box-sizing: border-box;
   padding: 1rem 2rem;
-  border: 1px solid #FFF;
   border-radius: 5px;
 }
 
@@ -99,19 +98,18 @@ body {
   margin-left: 0.7rem;
 }
 
-.sobre, .diferenciais, .destaques, .cabecalho, .chamada {
+.contato, .sobre, .diferenciais, .planos, .destaques, .cabecalho, .chamada {
   padding-right: 6%;
   padding-left: 6%;
 }
 
-.destaques__botao, .chamada__botao {
+.contato__botao, .cartao__botao, .destaques__botao, .chamada__botao {
   text-align: center;
   display: block;
   width: 100%;
   max-width: 350px;
   box-sizing: border-box;
   padding: 1rem 2rem;
-  border: 1px solid #FFF;
   border-radius: 5px;
 }
 
@@ -138,22 +136,22 @@ body {
   margin: 0 auto 2.5rem;
 }
 .chamada__botao {
+  border: 1px solid #FFF;
   width: 100%;
 }
 
-.sobre, .diferenciais, .cabecalho, .chamada, .destaques {
+.contato, .sobre, .diferenciais, .planos, .cabecalho, .chamada, .destaques {
   padding-right: 6%;
   padding-left: 6%;
 }
 
-.chamada__botao, .destaques__botao {
+.contato__botao, .cartao__botao, .chamada__botao, .destaques__botao {
   text-align: center;
   display: block;
   width: 100%;
   max-width: 350px;
   box-sizing: border-box;
   padding: 1rem 2rem;
-  border: 1px solid #FFF;
   border-radius: 5px;
 }
 
@@ -189,9 +187,25 @@ body {
   line-height: normal;
 }
 .destaques__botao {
+  border: 1px solid #FFF;
   color: #B72E2E;
   border-color: #B72E2E;
   margin: 0 auto;
+}
+
+.contato, .sobre, .diferenciais, .cabecalho, .chamada, .destaques, .planos {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.contato__botao, .chamada__botao, .destaques__botao, .cartao__botao {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  border-radius: 5px;
 }
 
 .planos {
@@ -256,13 +270,13 @@ body {
   margin-bottom: 1rem;
 }
 .cartao__botao--start {
-  border-color: #56CCF2;
+  border: 1px solid #56CCF2;
 }
 .cartao__botao--ultra {
-  border-color: #B04CD9;
+  border: 1px solid #B04CD9;
 }
 .cartao__botao--mega {
-  border-color: #E33B3B;
+  border: 1px solid #E33B3B;
 }
 .cartao--start {
   color: #56CCF2;
@@ -287,6 +301,17 @@ body {
   max-width: 350px;
   box-sizing: border-box;
   padding: 2rem 0 2rem 5rem;
+  background-repeat: no-repeat;
+  background-position: top 1.25rem left 2.5rem;
+}
+.diferenciais__item--tempo {
+  background-image: url(../../img/icone-relogio.png);
+}
+.diferenciais__item--foco {
+  background-image: url(../../img/icone-dinheiro.png);
+}
+.diferenciais__item--especialistas {
+  background-image: url(../../img/icone-quimica.png);
 }
 .diferenciais__item__titulo {
   color: #4F4C4C;
@@ -325,6 +350,88 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 1rem;
+}
+
+.cabecalho, .chamada, .destaques, .planos, .diferenciais, .sobre, .contato {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.chamada__botao, .destaques__botao, .cartao__botao, .contato__botao {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.contato__titulo {
+  color: #4F4C4C;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.contato__botao {
+  border: 1px solid #FFF;
+  color: #4F4C4C;
+  border-color: #4F4C4C;
+  margin-top: 1rem;
+}
+
+.institucional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.institucional__titulo {
+  color: #4F4C4C;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.institucional__descricao {
+  margin-bottom: 2rem;
+}
+.institucional__endereco {
+  font-size: 1.5rem;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+.institucional__contato {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 2rem;
+}
+.institucional__contato-telefone {
+  line-height: normal;
+}
+.institucional__contato-email {
+  color: #0084FF;
+  text-decoration: underline;
+  display: block;
+}
+.institucional__video {
+  width: 100vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
