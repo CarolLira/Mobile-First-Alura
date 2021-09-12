@@ -1,4 +1,9 @@
 .institucional {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.institucional {
   display: flex;
   flex-direction: column;
   align-items: center;

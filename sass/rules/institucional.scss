@@ -1,7 +1,9 @@
 @use '../modules/cores';
 @use '../modules/fonts';
+@use '../modules/extends';
 
 .institucional {
+  @extend %container;
   display: flex;
   flex-direction: column;
   align-items: center;
