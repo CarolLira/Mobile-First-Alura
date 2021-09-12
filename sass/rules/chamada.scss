@@ -1,6 +1,7 @@
 @use '../modules/cores';
 @use '../modules/fonts';
 @use '../modules/extends';
+@use '../modules/mixins';
 
 .chamada {
   @extend %container;
@@ -30,6 +31,7 @@
   
   &__botao {
     @extend %botao;
+    @include mixins.button-border;
     width: 100%;
   }
 }

@@ -1,6 +1,7 @@
 @use '../modules/cores';
 @use '../modules/fonts';
 @use '../modules/extends';
+@use '../modules/mixins';
 
 .destaques {
     @extend %container;
@@ -40,6 +41,7 @@
 
     &__botao {
         @extend %botao;
+        @include mixins.button-border;
         color: cores.$vermelho-forte;
         border-color: cores.$vermelho-forte;
         margin: 0 auto;
