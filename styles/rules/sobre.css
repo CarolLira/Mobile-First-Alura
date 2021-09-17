@@ -1,10 +1,10 @@
 /* Error: The target selector was not found.
  * Use "@extend %container !optional" to avoid this error.
  *   ,
- * 5 |   @extend %container;
+ * 6 |   @extend %container;
  *   |   ^^^^^^^^^^^^^^^^^^
  *   '
- *   sass\rules\sobre.scss 5:3  root stylesheet */
+ *   sass\rules\sobre.scss 6:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend %container !optional" to avoid this error.\a   \2577 \a 5 \2502    @extend %container;\a   \2502    ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\rules\\sobre.scss 5:3  root stylesheet';
+  content: 'Error: The target selector was not found.\aUse "@extend %container !optional" to avoid this error.\a   \2577 \a 6 \2502    @extend %container;\a   \2502    ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\rules\\sobre.scss 6:3  root stylesheet';
 }

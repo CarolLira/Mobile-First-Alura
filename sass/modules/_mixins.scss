@@ -13,3 +13,8 @@
 @mixin button-border($border-color: cores.$branco) {
     border: 1px solid $border-color;
 }
+
+@mixin container-media-1024() {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+}

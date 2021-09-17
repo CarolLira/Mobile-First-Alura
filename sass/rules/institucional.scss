@@ -1,6 +1,7 @@
 @use '../modules/cores';
 @use '../modules/fonts';
 @use '../modules/extends';
+@use '../modules/mixins';
 
 .institucional {
   @extend %container;
@@ -50,5 +51,35 @@
 
   &__video {
     width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .institucional {
+    @include mixins.container-media-1024;
+    &__contato-email {
+      display: inline-block;
+    }
+    &__video {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .institucional {
+    &__conteudo {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+    &__video {
+      align-self: flex-start;
+      width: 375px;
+    }
+    &__contato-email {
+      display: block;
+    }
   }
 }

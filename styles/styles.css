@@ -98,6 +98,15 @@ body {
   margin-left: 0.7rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .cabecalho {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+  }
+}
 .rodape, .institucional, .contato, .sobre, .diferenciais, .planos, .destaques, .cabecalho, .chamada {
   padding-right: 6%;
   padding-left: 6%;
@@ -140,6 +149,24 @@ body {
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .chamada__texto {
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 1024) {
+  .chamada {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+    background-image: url("../../img/bg-intro.jpg");
+    background-size: cover;
+    padding-top: 8.25rem;
+  }
+  .chamada__titulo {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+}
 .rodape, .institucional, .contato, .sobre, .diferenciais, .planos, .cabecalho, .chamada, .destaques {
   padding-right: 6%;
   padding-left: 6%;
@@ -193,6 +220,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 1024) {
+  .destaques {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+  }
+}
 .rodape, .institucional, .contato, .sobre, .diferenciais, .cabecalho, .chamada, .destaques, .planos {
   padding-right: 6%;
   padding-left: 6%;
@@ -288,6 +321,27 @@ body {
   color: #E33B3B;
 }
 
+@media only screen and (min-width: 768px) {
+  .cartao {
+    max-width: 400px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .planos {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+  }
+
+  .planos__cartoes {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .cartao {
+    max-width: 300px;
+  }
+}
 .diferenciais {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -324,6 +378,16 @@ body {
   line-height: normal;
 }
 
+@media only screen and (min-width: 1024px) {
+  .diferenciais {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+    background-color: #F7F4F4;
+  }
+  .diferenciais__lista {
+    justify-content: space-around;
+  }
+}
 .sobre {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -351,7 +415,30 @@ body {
   justify-content: space-evenly;
   margin-bottom: 1rem;
 }
+.sobre__imagem {
+  display: none;
+}
 
+@media only screen and (min-width: 1024px) {
+  .sobre {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+    display: flex;
+  }
+  .sobre__conteudo {
+    margin-right: 3rem;
+  }
+  .sobre__titulo {
+    text-align: left;
+  }
+  .sobre__texto--divisao {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 1.5rem;
+  }
+  .sobre__imagem {
+    display: block;
+  }
+}
 .rodape, .institucional, .cabecalho, .chamada, .destaques, .planos, .diferenciais, .sobre, .contato {
   padding-right: 6%;
   padding-left: 6%;
@@ -391,6 +478,12 @@ body {
   margin-top: 1rem;
 }
 
+@media only screen and (min-width: 1024) {
+  .contato {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+  }
+}
 .rodape, .cabecalho, .chamada, .destaques, .planos, .diferenciais, .sobre, .contato, .institucional {
   padding-right: 6%;
   padding-left: 6%;
@@ -449,6 +542,33 @@ body {
   width: 100vw;
 }
 
+@media only screen and (min-width: 768px) {
+  .institucional {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+  }
+  .institucional__contato-email {
+    display: inline-block;
+  }
+  .institucional__video {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .institucional__conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .institucional__video {
+    align-self: flex-start;
+    width: 375px;
+  }
+  .institucional__contato-email {
+    display: block;
+  }
+}
 .cabecalho, .chamada, .destaques, .planos, .diferenciais, .sobre, .contato, .institucional, .rodape {
   padding-right: 6%;
   padding-left: 6%;
@@ -489,6 +609,16 @@ body {
 .rodape__link {
   display: inline-block;
   margin: 0 0.5rem 0.7rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .rodape {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

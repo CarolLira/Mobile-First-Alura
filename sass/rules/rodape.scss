@@ -1,5 +1,6 @@
 @use '../modules/extends';
 @use '../modules/cores';
+@use '../modules/mixins';
 
 .rodape {
   @extend %container;
@@ -30,5 +31,14 @@
   &__link {
     display: inline-block;
     margin: 0 0.5rem 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .rodape {
+    @include mixins.container-media-1024;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }

@@ -30,4 +30,14 @@
   margin: 0 0.5rem 0.7rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .rodape {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 /*# sourceMappingURL=rodape.css.map */

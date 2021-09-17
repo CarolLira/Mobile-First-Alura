@@ -1,4 +1,5 @@
 @use '../modules/cores';
+@use '../modules/mixins';
 
 .diferenciais {
   @extend %container;
@@ -40,6 +41,17 @@
 
     &__texto {
       line-height: normal;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .diferenciais {
+    @include mixins.container-media-1024;
+    background-color: cores.$cinza-claro;
+
+    &__lista {
+      justify-content: space-around;
     }
   }
 }

@@ -1,5 +1,6 @@
 @use '../modules/cores';
 @use '../modules/fonts';
+@use '../modules/mixins';
 
 .sobre {
   @extend %container;
@@ -31,5 +32,35 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 1rem;
+  }
+
+  &__imagem {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sobre {
+    @include mixins.container-media-1024;
+    display: flex;
+
+    &__conteudo {
+      margin-right: 3rem;
+    }
+
+    &__titulo {
+      text-align: left;
+    }
+
+    &__texto {
+      &--divisao {
+        border-bottom: 1px solid cores.$cinza-medio;
+        padding-bottom: 1.5rem;
+      }
+    }
+
+    &__imagem {
+      display: block;
+    }
   }
 }

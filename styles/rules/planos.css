@@ -93,4 +93,26 @@
   color: #E33B3B;
 }
 
+@media only screen and (min-width: 768px) {
+  .cartao {
+    max-width: 400px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .planos {
+    padding-left: calc((100% - 940px)/ 2);
+    padding-right: calc((100% - 940px)/ 2);
+  }
+
+  .planos__cartoes {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .cartao {
+    max-width: 300px;
+  }
+}
+
 /*# sourceMappingURL=planos.css.map */

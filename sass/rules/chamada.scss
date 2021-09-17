@@ -35,3 +35,23 @@
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .chamada__texto {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024) {
+  .chamada {
+    @include mixins.container-media-1024;
+    background-image: url('../../img/bg-intro.jpg');
+    background-size: cover;
+    padding-top: 8.25rem;
+
+    &__titulo {
+      font-size: 3.25rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

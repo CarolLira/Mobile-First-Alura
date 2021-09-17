@@ -1,7 +1,9 @@
 @use '../modules/cores';
 @use '../modules/extends';
+@use '../modules/mixins';
 
 .cabecalho {
+    @extend %container;
     color: cores.$branco;
     width: 100%;
     box-sizing: border-box;
@@ -12,7 +14,6 @@
     padding-bottom: .75rem;
     border-bottom: 1px solid cores.$borda-cabecalho-mobile;
     position: absolute;
-    @extend %container;
 
     &__logo {
         margin-bottom: 1rem;
@@ -28,5 +29,14 @@
         margin-right: .7rem;
         margin-bottom: 1.25rem;
         margin-left: .7rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cabecalho {
+        @include mixins.container-media-1024;
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
     }
 }
